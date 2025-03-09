@@ -1,0 +1,413 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+
+}
+
+.container-member {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to right, #f0f0f0 0%, #EBD69C 100%);
+  /* align-items: center; */
+  /* 使容器的高度至少和屏幕一样高，这样可以在垂直方向上居中 */
+  min-height: 50vh;
+  position: relative;
+  overflow: hidden;
+  /* 你可以根据需要设置其他属性 */
+}
+
+.corner-image {
+  position: absolute;
+  height: 100%; /* Set height to 100% of the parent container */
+  width: 45%; /* Maintain aspect ratio */
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.left-corner {
+  background-image: url('https://static.igem.wiki/teams/5136/notebook/new.png');
+  left: -22.5%; /* Align to the left */
+  top: 50%;
+}
+
+.right-corner {
+  background-image: url('https://static.igem.wiki/teams/5136/notebook/new.png');
+  right: -22.5%; /* Align to the right */
+  top: 50%;
+}
+
+.container-member img {
+  width: 50%; /* 宽度占父容器的80% */
+  max-width: 100%; /* 确保图片不会超过容器宽度 */
+  height: auto; /* 保持图片的宽高比 */
+  position: absolute;
+  top: 0; /* 保证图片位于父容器的顶部 */
+  left: 50%; /* 左边缘移动到容器中点 */
+  transform: translateX(-50%); /* 使图片水平居中 */
+  margin-top: 0; /* 确保图片紧贴顶部 */
+}
+
+.movie-name{
+position: absolute;
+bottom: -60px;
+font-size: 30px;
+}
+.hhh {
+  margin-left: -30vw;
+  width: 80vw;
+  overflow: hidden;
+}
+
+.hhh-xie {
+  align-self: center;
+  width: 90vw;
+}
+
+.grid-xie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* 或者你可以根据需要指定一个具体的宽度 */
+  /* max-width: 960px; */
+  /* 可选项，根据需要设置最大宽度 */
+  /* margin: auto; */
+  /* margin-top: 100px; */
+  /* margin-left: -600px; */
+  /* 你可以根据需要添加其他样式 */
+  transform: rotate(-60deg);
+  /* 旋转整个grid 45度 */
+}
+.hidden-link {
+    position: absolute;
+    width: 100%; /* 或者您想要的链接区域的宽度 */
+    height: 100%; /* 或者您想要的链接区域的高度 */
+    top: 0;
+    left: 0;
+    z-index: 10; /* 确保链接在其他内容之上 */
+    display: block; /* 使链接填满整个区域 */
+    color: transparent; /* 使链接文本透明 */
+    text-indent: -9999px; /* 将链接文本推到视图外 */
+    overflow: hidden; /* 隐藏溢出的内容 */
+}
+
+.grid-pin {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  overflow: visible;
+  /* 或者你可以根据需要指定一个具体的宽度 */
+  /* max-width: 960px; */
+  /* 可选项，根据需要设置最大宽度 */
+  /* margin: auto; */
+  /* margin-top: 100px; */
+   margin-left: -250px;
+  /* 你可以根据需要添加其他样式 */
+  /* transform: rotate(-60deg); */
+  /* 旋转整个grid 45度 */
+}
+
+.row {
+  display: flex;
+  /* 应用粉笔特效图案 */
+  filter: url(#chalk);
+  margin-top: -80px;
+  /* margin-bottom: 10px; */
+}
+
+.pro-card-wrapper-xie {
+  /* 开启3D空间 */
+  perspective: 900px;
+  margin-left: 50px;
+  margin-right: 50px;
+  /* transform: rotate(90deg); */
+}
+
+.pro-card-wrapper-pin {
+  /* 开启3D空间 */
+  perspective: 900px;
+  margin-left: 2px;
+  margin-right: 2px;
+  /* transform: rotate(90deg); */
+}
+
+.pro-card {
+  rotate: 90deg;
+  /* 基础布局 */
+  width: 190px;
+  height: 280px;
+  /* margin: 20px; */
+  font-size: 48px;
+  position: relative;
+  text-align: center;
+
+  /* 翻转特效时间 */
+  transition: transform 0.8s;
+  /* 保留3D空间 */
+  transform-style: preserve-3d;
+}
+
+.pro-card-pin {
+  /* 基础布局 */
+  width: 150px;
+  height: 200px;
+  /* margin: 20px; */
+  font-size: 48px;
+  position: relative;
+  left:-100px;
+  text-align: center;
+
+  /* 翻转特效时间 */
+  transition: transform 0.8s;
+  /* 保留3D空间 */
+  transform-style: preserve-3d;
+}
+
+/* 假名 */
+.zheng-top,
+.fan-top {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-image: url("./tlp.png"); */
+  backface-visibility: hidden;
+  border: 1px solid #d2dae2;
+  color: white;
+
+  /* 调整背景图片大小和位置 */
+  background-size: cover;
+  /* 使背景图片覆盖整个元素 */
+  background-position: center;
+  /* 将背景图片居中 */
+}
+
+.zheng-body,
+.fan-body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-image: url("./tlp.png"); */
+  backface-visibility: hidden;
+  border: 1px solid #d2dae2;
+  color: white;
+
+  /* 调整背景图片大小和位置 */
+  background-size: cover;
+  /* 使背景图片覆盖整个元素 */
+  background-position: center;
+  /* 将背景图片居中 */
+}
+
+/* .zheng-top{
+  background-image: url("../img/tlp.png");
+} */
+/* 翻转卡片 */
+
+.fan-top {
+  transform: rotateY(180deg);
+  /* background-image: url("../img/ftlp.png"); */
+}
+
+/* .zheng-body{
+  background-image: url("../img/tlp-shu.png");
+} */
+/* 翻转卡片 */
+.fan-body {
+  transform: rotateY(180deg);
+  /* background-image: url("../img/ftlp-shu.png"); */
+}
+
+.pro-card-wrapper-xie:hover .pro-card {
+  transform: rotateY(180deg);
+}
+
+.pro-card-wrapper-pin:hover .pro-card-pin {
+  transform: rotateY(180deg);
+}
+
+/* 屏幕适配 */
+@media screen and (max-width: 960px) {
+  .pro-card {
+    width: 120px;
+    height: 160px;
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .pro-card {
+    width: 81px;
+    height: 108px;
+    font-size: 24px;
+  }
+
+  /* 屏幕小于650px特效会影响阅读，取消 */
+  .row {
+    filter: none;
+  }
+
+  .zheng-top,
+  .fan-top {
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .pro-card {
+    width: 60px;
+    height: 80px;
+    font-size: 20px;
+  }
+}
+
+
+.welcome {
+  width: 60vw;
+  display: flex;
+  /* 定义为 Flex 容器 */
+  flex-direction: column;
+  /* 设置主轴方向为垂直方向 */
+  justify-content: center;
+  /* 在主轴（竖直方向）上居中 */
+  align-items: center;
+  /* 在交叉轴（水平方向）上居中（可选） */
+  margin-top: 50px;
+  margin-left: -10vw;
+  font-size: 5vw;
+  font-family: Comic Sans Ms;
+  color: #534f7a;
+  text-shadow:
+    1px 1px 0px #6a5e93,
+    /* 第一层阴影 */
+    2px 2px 0px #6a5e93,
+    /* 第二层阴影 */
+    3px 3px 0px #6a5e93,
+    /* 第三层阴影 */
+    4px 4px 0px #6a5e93;
+  /* 第四层阴影 */
+}
+
+.tiaozhuan {
+  display: flex;
+  /* 设置为Flex布局，使子元素横向排列 */
+  flex-direction: row;
+  /* 确保主轴方向为横向 */
+  justify-content: center;
+  /* 子元素在主轴上居中 */
+  align-items: center;
+  /* 子元素在交叉轴上居中 */
+  margin-left: -80px;
+
+}
+.tiaozhuan-text{
+position: relative;
+top: 200px;
+text-shadow: none;
+text-align: center;
+font-size: 40px;
+
+}
+.tiaozhuan-img {
+  width: 240px;
+  height: 240px;
+  background-repeat: no-repeat;
+  /* background-image: url("../img/tlp-shu.png"); */
+  background-size: 50%;
+  /* 使背景图片覆盖整个元素 */
+  background-position: center;
+  /* 将背景图片居中 */
+  margin: 20px;
+  margin-top: 100px;
+  cursor: pointer;
+}
+
+.fenlei {
+  position: relative;
+  left: -50px;
+  width: 40vw;
+  display: flex;
+  /* 定义为 Flex 容器 */
+  flex-direction: column;
+  /* 设置主轴方向为垂直方向 */
+  justify-content: center;
+  /* 在主轴（竖直方向）上居中 */
+  align-items: center;
+  /* 在交叉轴（水平方向）上居中（可选） */
+  /* margin-top: 4vh; */
+  font-family: Comic Sans Ms;
+  color: #6a5e93;
+  /* background-image: url('https://static.igem.wiki/teams/5136/notebook/new.png'); */
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+.container-member2 {
+  display: flex;
+  justify-content: center;
+  background-image: transparent;
+  height: 37vh;
+  position: relative;
+  overflow: hidden;
+  margin: 0; /* 移除外边距，使容器顶到页面两端 */
+}
+.backgroud-sm{
+    background-image: linear-gradient(to right, #f0f0f0 0%, #EBD69C 100%);
+}
+.divider {
+  border-bottom: 1px solid #3c3864; /* 灰色实线 */
+  padding: 5 0px; /* 左右内边距，确保分割线不顶到容器两端 */
+  margin: 0px auto; /* 上下外边距，自动水平居中 */
+  width: 90%; /* 设置分割线的宽度，确保不占满整个容器宽度 */
+}
+.movie-detail{
+  font-size: 3vw;
+  color: #53372c;
+}
+.movie-detail2{
+  font-size: 3vw;
+  color: #8B4513
+
+}
+
+.pv {
+  /* position: relative;
+  width: 60%;
+  margin: auto; */
+  position: relative;
+  width: 60%;
+  margin: auto;
+  display: flex;
+  /* 使 .pv 内部为 flex 布局 */
+  justify-content: center;
+  /* 水平居中 */
+  align-items: center;
+  /* 垂直居中（如果父容器有高度并且需要垂直居中） */
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: calc(100% / (560 / 315));
+  /* 根据视频的宽高比例计算容器的高度 */
+}
+
+#videoFrame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="5;url={{ url_for('login') }}">
+    <title>Error</title>
+    <script>
+        window.onload = function() {
+            alert("密码错误或用户不存在，请重新登录。");
+            window.location.href = '/back_to_index';
+        };
+    </script>
+</head>
+<body>
+</body>
+</html>

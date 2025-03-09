@@ -1,0 +1,740 @@
+<link rel="stylesheet" href="{{ url_for('static', filename = 'members.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename = 'style.css') }}">
+
+<!-- <link rel="stylesheet" href="{{ url_for('static', filename = 'font/font.css') }}"> -->
+<style>
+    .vjs-poster {
+        background-image: url('https://static.igem.wiki/teams/5136/notebook/new.png');
+    }
+
+    .go-to-attribution {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.5rem;
+        /* 字体大小 */
+        color: #6a5e93;
+        /* 文字颜色 */
+        font-weight: bold;
+        /* 字体加粗 */
+        text-decoration: none;
+        /* 去掉下划线 */
+        margin: 50px 0;
+        /* 上下外边距 */
+        position: relative;
+        /* 相对定位用于箭头效果 */
+        transition: color 0.3s ease;
+        /* 颜色渐变效果 */
+    }
+
+    .go-to-attribution img {
+        position: relative;
+        left: 0;
+        width: 10vw;
+        transform: translateX(3vw);
+        transition: transform 0.3s ease;
+    }
+
+    .go-to-attribution:hover {
+        color: #534f7a;
+    }
+
+    .go-to-attribution:hover img {
+        transform: translateX(6vw);
+    }
+</style>
+<!--loading-->
+
+<div class="container-member">
+    <div class="hhh">
+        <!--loading-->
+        <!-- <div style="height: 100px;position: relative;;">112123131</div> -->
+        <!--Magic-navbar-->
+        <div class="grid-xie">
+            <!-- 行元素 -->
+            <div class="row">
+                <div class="pro-card-wrapper-xie">
+                    <div class="pro-card">
+                        <div class="zheng-top"
+                            style="background-image: url('{{ url_for('static', filename='all/1.jpg') }}')"></div>
+                        <div class="fan-top"
+                            style="background-image: url('{{ url_for('static', filename='all/2.jpg') }}')"></div>
+                    </div>
+                </div>
+
+                <div class="pro-card-wrapper-xie">
+                    <div class="pro-card">
+                        <div class="zheng-top"
+                            style="background-image: url('{{ url_for('static', filename='all/3.jpg') }}')"></div>
+                        <div class="fan-top"
+                            style="background-image: url('{{ url_for('static', filename='all/4.jpg') }}')"></div>
+                    </div>
+                </div>
+                <div class="pro-card-wrapper-xie">
+                    <div class="pro-card">
+                        <div class="zheng-top"
+                            style="background-image: url('{{ url_for('static', filename='all/5.jpg') }}')"></div>
+                        <div class="fan-top"
+                            style="background-image: url('{{ url_for('static', filename='all/6.jpg') }}')"></div>
+                    </div>
+                </div>
+
+                <div class="pro-card-wrapper-xie">
+                    <div class="pro-card">
+                        <div class="zheng-top"
+                            style="background-image: url('{{ url_for('static', filename='all/7.jpg') }}')"></div>
+                        <div class="fan-top"
+                            style="background-image: url('{{ url_for('static', filename='all/8.jpg') }}')"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- 单元格 -->
+                <div class="pro-card-wrapper-xie">
+                    <div class="pro-card">
+                        <div class="zheng-top"
+                            style="background-image: url('{{ url_for('static', filename='all/11.jpg') }}')"></div>
+                        <div class="fan-top"
+                            style="background-image: url('{{ url_for('static', filename='all/12.jpg') }}')"></div>
+                    </div>
+                </div>
+                <div class="pro-card-wrapper-xie">
+                    <div class="pro-card">
+                        <div class="zheng-top"
+                            style="background-image: url('{{ url_for('static', filename='all/13.jpg') }}')"></div>
+                        <div class="fan-top"
+                            style="background-image: url('{{ url_for('static', filename='all/14.jpg') }}')"></div>
+                    </div>
+                </div>
+                <div class="pro-card-wrapper-xie">
+                    <div class="pro-card">
+                        <div class="zheng-top"
+                            style="background-image: url('{{ url_for('static', filename='all/15.jpg') }}')"></div>
+                        <div class="fan-top"
+                            style="background-image: url('{{ url_for('static', filename='all/16.jpg') }}')"></div>
+                    </div>
+                </div>
+                <div class="pro-card-wrapper-xie">
+                    <div class="pro-card">
+                        <div class="zheng-top"
+                            style="background-image: url('{{ url_for('static', filename='all/17.jpg') }}')"></div>
+                        <div class="fan-top"
+                            style="background-image: url('{{ url_for('static', filename='all/18.jpg') }}')"></div>
+                    </div>
+                </div>
+                <div class="pro-card-wrapper-xie">
+                    <div class="pro-card">
+                        <div class="zheng-top"
+                            style="background-image: url('{{ url_for('static', filename='all/19.jpg') }}')"></div>
+                        <div class="fan-top"
+                            style="background-image: url('{{ url_for('static', filename='all/20.jpg') }}')"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- 单元格 -->
+                <div class="pro-card-wrapper-xie">
+                    <div class="pro-card">
+                        <div class="zheng-top"
+                            style="background-image: url('{{ url_for('static', filename='all/21.jpg') }}')"></div>
+                        <div class="fan-top"
+                            style="background-image: url('{{ url_for('static', filename='all/22.jpg') }}')"></div>
+                    </div>
+                </div>
+                <div class="pro-card-wrapper-xie">
+                    <div class="pro-card">
+                        <div class="zheng-top"
+                            style="background-image: url('{{ url_for('static', filename='all/23.jpg') }}')"></div>
+                        <div class="fan-top"
+                            style="background-image: url('{{ url_for('static', filename='all/24.jpg') }}')"></div>
+                    </div>
+                </div>
+                <div class="pro-card-wrapper-xie">
+                    <div class="pro-card">
+                        <div class="zheng-top"
+                            style="background-image: url('{{ url_for('static', filename='all/25.jpg') }}')"></div>
+                        <div class="fan-top"
+                            style="background-image: url('{{ url_for('static', filename='all/26.jpg') }}')"></div>
+                    </div>
+                </div>
+                <div class="pro-card-wrapper-xie">
+                    <div class="pro-card">
+                        <div class="zheng-top"
+                            style="background-image: url('{{ url_for('static', filename='all/27.jpg') }}')"></div>
+                        <div class="fan-top"
+                            style="background-image: url('{{ url_for('static', filename='all/28.jpg') }}')"></div>
+                    </div>
+                </div>
+                <div class="pro-card-wrapper-xie">
+                    <div class="pro-card">
+                        <div class="zheng-top"
+                            style="background-image: url('{{ url_for('static', filename='all/29.jpg') }}')"></div>
+                        <div class="fan-top"
+                            style="background-image: url('{{ url_for('static', filename='all/30.jpg') }}')"></div>
+                    </div>
+                </div>
+                <div class="pro-card-wrapper-xie">
+                    <div class="pro-card">
+                        <div class="zheng-top"
+                            style="background-image: url('{{ url_for('static', filename='all/31.jpg') }}')"></div>
+                        <div class="fan-top"
+                            style="background-image: url('{{ url_for('static', filename='all/32.jpg') }}')"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="pro-card-wrapper-xie">
+                    <div class="pro-card">
+                        <div class="zheng-top"
+                            style="background-image: url('{{ url_for('static', filename='all/43.jpg') }}')"></div>
+                        <div class="fan-top"
+                            style="background-image: url('{{ url_for('static', filename='all/34.jpg') }}')"></div>
+                    </div>
+                </div>
+                <div class="pro-card-wrapper-xie">
+                    <div class="pro-card">
+                        <div class="zheng-top"
+                            style="background-image: url('{{ url_for('static', filename='all/45.jpg') }}')"></div>
+                        <div class="fan-top"
+                            style="background-image: url('{{ url_for('static', filename='all/36.jpg') }}')"></div>
+                    </div>
+                </div>
+                <div class="pro-card-wrapper-xie">
+                    <div class="pro-card">
+                        <div class="zheng-top"
+                            style="background-image: url('{{ url_for('static', filename='all/47.jpg') }}')"></div>
+                        <div class="fan-top"
+                            style="background-image: url('{{ url_for('static', filename='all/38.jpg') }}')"></div>
+                    </div>
+                </div>
+                <div class="pro-card-wrapper-xie">
+                    <div class="pro-card">
+                        <div class="zheng-top"
+                            style="background-image: url('{{ url_for('static', filename='all/66.jpg') }}')"></div>
+                        <div class="fan-top"
+                            style="background-image: url('{{ url_for('static', filename='all/55.jpg') }}')"></div>
+                    </div>
+                </div>
+                <div class="pro-card-wrapper-xie">
+                    <div class="pro-card">
+                        <div class="zheng-top"
+                            style="background-image: url('{{ url_for('static', filename='all/57.jpg') }}')"></div>
+                        <div class="fan-top"
+                            style="background-image: url('{{ url_for('static', filename='all/58.jpg') }}')"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="welcome">
+        <!-- <br><br><br><br><br> -->
+        {% if username|length > 10 %}
+        <span style="font-family: Comic Sans Ms;">Hello! {{ username[:5] }}...</span>
+        {% else %}
+        <span style="font-family: Comic Sans Ms;">Hello! {{ username }}</span>
+        {% endif %}
+        <span style="font-family: Comic Sans Ms;">Welcome to </span>
+        <span style="font-family: Comic Sans Ms;">Movie Recommend</span>
+        <!-- <span style="font-family: Comic Sans Ms;font-size:60px">组长：刘清航</span>
+        <span style="font-family: Comic Sans Ms;font-size:60px">组员：马显军，邹宇涵</span> -->
+
+        <div class="tiaozhuan" style="flex-direction: row;margin-top:-30px">
+
+
+            <div class="tiaozhuan-img" onclick="window.location.href='{{ url_for('index_login') }}'"
+                style="background-image:url('{{ url_for('static', filename='images/tuichu.png') }}')">
+                <div class="tiaozhuan-text">退出登录</div>
+            </div>
+            <div class="tiaozhuan-img" onclick="window.location.href='{{ url_for('vote') }}'"
+                style="background-image:url('{{ url_for('static', filename='images/dafen.png') }}')">
+                <div class="tiaozhuan-text">电影打分</div>
+            </div>
+            <div class="tiaozhuan-img"
+                onclick="window.scrollTo({top:document.querySelector('#section1').offsetTop,behavior:'smooth'})"
+                style="background-image:url('{{ url_for('static', filename='images/tuijian.png') }}')">
+                <div class="tiaozhuan-text">个性推荐</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="container-member" style="min-height: 6vh;"></div>
+<div class="container-member" style="min-height: 20vh;">
+    <span style="color: #534f7a;top: 0vh;position: absolute;font-family: fangsong;font-size: 3vw;
+    text-shadow: 1px 1px 0px #6a5e93,
+    2px 2px 0px #6a5e93,
+    3px 3px 0px #6a5e93,
+    4px 4px 0px #6a5e93;">——热门电影——</span>
+    <img style="top:inherit; bottom: 0vh;" src="https://static.igem.wiki/teams/5136/member-tlp-3/member-fy1.png" alt="">
+</div>
+<div id="banner">
+    <div class="img-list img-wrapper">
+        <div class="img-box">
+                <a href="https://movie.douban.com/subject/36727829/" target="_blank">
+            <img src="../static/images/1.jpg" alt="">
+
+                </a>
+        </div>
+        <div class="img-box">
+        <a href="https://movie.douban.com/subject/36712987/" target="_blank">
+            <img src="../static/images/2.jpg" alt="">
+            </a>
+        </div>
+        <div class="img-box">
+            <a href="https://movie.douban.com/subject/35882838/" target="_blank">
+            <img src="../static/images/3.jpg" alt="">
+            </a>
+        </div>
+        <div class="img-box">
+        <a href="https://movie.douban.com/subject/27085337/" target="_blank">
+            <img src="../static/images/4.jpg" alt="">
+        </a>
+        </div>
+        <div class="img-box">
+        <a href="https://movie.douban.com/subject/36934908/" target="_blank">
+            <img src="../static/images/5.jpg" alt="">
+        </a>
+        </div>
+        <div class="img-box" >
+        <a href="https://movie.douban.com/subject/35603727/" target="_blank">
+            <img src="../static/images/6.jpg" alt="">
+        </a>
+        </div>
+        <div class="img-box">
+        <a href="https://movie.douban.com/subject/36195543/" target="_blank">
+            <img src="../static/images/7.jpg" alt="">
+        </a>
+        </div>
+        <div class="img-box">
+        <a href="https://movie.douban.com/subject/37061193/" target="_blank">
+            <img src="../static/images/8.jpg" alt="">
+        </a>
+        </div>
+        <div class="img-box">
+                    <a href="https://movie.douban.com/subject/26957900/" target="_blank">
+            <img src="../static/images/9.jpg" alt="">
+                    </a>
+        </div>
+        <div class="img-box">
+
+            <a href="https://movie.douban.com/subject/26656728/" target="_blank">
+            <img src="../static/images/10.jpg" alt="">
+            </a>
+        </div>
+        <div class="img-box">
+                <a href="https://movie.douban.com/subject/36663230/" target="_blank">
+            <img src="../static/images/11.jpg" alt="">
+                </a>
+        </div>
+        <div class="img-box">
+                <a href="https://movie.douban.com/subject/1295644/" target="_blank">
+            <img src="../static/images/12.jpg" alt="">
+                </a>
+        </div>
+    </div>
+</div>
+<div class="container-member" style="min-height: 6vh;"></div>
+<div class="container-member" style="min-height: 20vh;" id="section1">
+    <span style="color: #534f7a;top: 0vh;position: absolute;font-family: fangsong;font-size: 3vw;
+    text-shadow: 1px 1px 0px #6a5e93,
+    2px 2px 0px #6a5e93,
+    3px 3px 0px #6a5e93,
+    4px 4px 0px #6a5e93;">——个性推荐——</span>
+    <img style="top:inherit; bottom: 0vh;" src="https://static.igem.wiki/teams/5136/member-tlp-3/member-fy1.png" alt="">
+</div>
+{% for movie in movies_a %}
+<div class="backgroud-sm">
+    <div class="container-member2 divider">
+    <!-- <img src="https://static.igem.wiki/teams/5136/member-tlp-3/member-fy1.png" alt=""> -->
+    <div class="fenlei">
+        <div class="pro-card-wrapper-pin" style="margin: 20px;">
+        <div class="pro-card-pin" style="width: 180px;height: 240px;">
+        <div class="zheng-body"
+        style="background-image:url('{{ url_for('static', filename='all/' + movie.movieId|string + '.jpg') }}');;">
+        </div>
+        <div class="fan-body"
+                            style="background-image: url('{{ url_for('static', filename='all/' + movie.movieId|string + '.jpg') }}');">
+                            <a href="https://movielens.org/movies/{{ movie.movieId|string }}" target="_blank"
+                                class="hidden-link">goto</a>
+                        </div>
+            </div>
+            </div>
+        <!-- <span style="font-size: 90px; font-family: Comic Sans Ms;">猜你喜欢</span> -->
+    </div>
+    <div class="hhh-xie">
+        <div class="grid-pin">
+            <div class="row" style="margin-top:-140px">
+
+                <p class="movie-detail" style="{% if movie.title|length > 30 %}
+                    font-size: 2.0vw;
+                  {% elif movie.genres|length > 20 %}
+                    font-size: 2.2vw;
+                  {% elif movie.genres|length > 10 %}
+                    font-size: 2.4vw;
+                  {% else %}
+                    font-size: 2.6vw;
+                  {% endif %}">{{ movie.title }}</p>
+                <!-- {% for movie in movies_a %}
+                <div class="pro-card-wrapper-pin" style="margin: 20px;">
+                    <div class="pro-card-pin" style="width: 180px;height: 240px;">
+                        <div class="zheng-body"
+                            style="background-image: url('{{ url_for('static', filename='images/' + movie.movieId|string + '.jpg') }}');">
+                            <div class="movie-name">{{ movie.title }}</div>
+                        </div>
+
+                        <div class="fan-body"
+                            style="background-image: url('{{ url_for('static', filename='images/' + movie.movieId|string + '.jpg') }}');">
+                            <a href="https://movielens.org/movies/{{ movie.movieId|string }}" target="_blank"
+                                class="hidden-link">goto</a>
+                        </div>
+
+                    </div>
+                </div>
+                {% endfor %} -->
+            </div>
+
+
+
+
+        </div>
+        <div class="grid-pin">
+            <div class="row" style="margin-bottom:0px">
+
+                <p class="movie-detail2" style="{% if movie.genres|length > 30 %}
+                    font-size: 1.6vw;
+                  {% elif movie.genres|length > 20 %}
+                    font-size: 1.7vw;
+                  {% elif movie.genres|length > 10 %}
+                    font-size: 1.8vw;
+                  {% else %}
+                    font-size: 1.9vw;
+                  {% endif %}">
+                    {{ movie.genres }}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{% endfor %}
+<!-- <div class="container-member" id="section2">
+    <img src="https://static.igem.wiki/teams/5136/member-tlp-3/member-fy1.png" alt="">
+    <div class="fenlei">
+        <span style="font-size: 90px; font-family: Comic Sans Ms;">喜剧推荐</span>
+    </div>
+    <div class="hhh-xie">
+        <div class="grid-pin">
+            <div class="row" style="margin-top:20px">
+                <div class="pro-card-wrapper-pin" style="margin: 20px;">
+                    <div class="pro-card-pin" style="width: 180px;height: 240px;">
+                        <div class="zheng-body"
+                            style="background-image: url('{{ url_for('static', filename='images/xj1.jpg') }}');">
+                            <div class="movie-name">美丽人生</div>
+                        </div>
+
+                        <div class="fan-body"
+                            style="background-image: url('{{ url_for('static', filename='images/xj1.jpg') }}');">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="pro-card-wrapper-pin" style="margin: 20px;">
+                    <div class="pro-card-pin" style="width: 180px;height: 240px;">
+                        <div class="zheng-body"
+                            style="background-image: url('{{ url_for('static', filename='images/xj2.jpg') }}');">
+                            <div class="movie-name">触不可及</div>
+                        </div>
+
+                        <div class="fan-body"
+                            style="background-image: url('{{ url_for('static', filename='images/xj2.jpg') }}');">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="pro-card-wrapper-pin" style="margin: 20px;">
+                    <div class="pro-card-pin" style="width: 180px;height: 240px;">
+                        <div class="zheng-body"
+                            style="background-image: url('{{ url_for('static', filename='images/xj3.jpg') }}');">
+                            <div class="movie-name">鬼子来了</div>
+                        </div>
+
+                        <div class="fan-body"
+                            style="background-image: url('{{ url_for('static', filename='images/xj3.jpg') }}');">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="pro-card-wrapper-pin" style="margin: 20px;">
+                    <div class="pro-card-pin" style="width: 180px;height: 240px;">
+                        <div class="zheng-body"
+                            style="background-image: url('{{ url_for('static', filename='images/xj4.jpg') }}');">
+                            <div class="movie-name">摩登时代</div>
+                        </div>
+
+                        <div class="fan-body"
+                            style="background-image: url('{{ url_for('static', filename='images/xj4.jpg') }}');">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="pro-card-wrapper-pin" style="margin: 20px;">
+                    <div class="pro-card-pin" style="width: 180px;height: 240px;">
+                        <div class="zheng-body"
+                            style="background-image: url('{{ url_for('static', filename='images/xj5.jpg') }}');">
+                            <div class="movie-name">大话西游</div>
+                        </div>
+
+                        <div class="fan-body"
+                            style="background-image: url('{{ url_for('static', filename='images/xj5.jpg') }}');">
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+</div> -->
+<!-- <div class="container-member" id="section3">
+    <img src="https://static.igem.wiki/teams/5136/member-tlp-3/member-fy1.png" alt="">
+    <div class="fenlei">
+        <span style="font-size: 90px; font-family: Comic Sans Ms;">科幻推荐</span>
+    </div>
+    <div class="hhh-xie">
+        <div class="grid-pin">
+            <div class="row" style="margin-top:20px">
+                <div class="pro-card-wrapper-pin" style="margin: 20px;">
+                    <div class="pro-card-pin" style="width: 180px;height: 240px;">
+                        <div class="zheng-body"
+                            style="background-image: url('{{ url_for('static', filename='images/kh1.jpg') }}');">
+                            <div class="movie-name">美丽人生</div>
+                        </div>
+
+                        <div class="fan-body"
+                            style="background-image: url('{{ url_for('static', filename='images/kh1.jpg') }}');">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="pro-card-wrapper-pin" style="margin: 20px;">
+                    <div class="pro-card-pin" style="width: 180px;height: 240px;">
+                        <div class="zheng-body"
+                            style="background-image: url('{{ url_for('static', filename='images/kh2.jpg') }}');">
+                            <div class="movie-name">美丽人生</div>
+                        </div>
+
+                        <div class="fan-body"
+                            style="background-image: url('{{ url_for('static', filename='images/kh2.jpg') }}');">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="pro-card-wrapper-pin" style="margin: 20px;">
+                    <div class="pro-card-pin" style="width: 180px;height: 240px;">
+                        <div class="zheng-body"
+                            style="background-image: url('{{ url_for('static', filename='images/kh3.jpg') }}');">
+                            <div class="movie-name">美丽人生</div>
+                        </div>
+
+                        <div class="fan-body"
+                            style="background-image: url('{{ url_for('static', filename='images/kh3.jpg') }}');">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="pro-card-wrapper-pin" style="margin: 20px;">
+                    <div class="pro-card-pin" style="width: 180px;height: 240px;">
+                        <div class="zheng-body"
+                            style="background-image: url('{{ url_for('static', filename='images/kh4.jpg') }}');">
+                        </div>
+
+                        <div class="fan-body"
+                            style="background-image: url('{{ url_for('static', filename='images/kh4.jpg') }}');">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="pro-card-wrapper-pin" style="margin: 20px;">
+                    <div class="pro-card-pin" style="width: 180px;height: 240px;">
+                        <div class="zheng-body"
+                            style="background-image: url('{{ url_for('static', filename='images/kh5.jpg') }}');">
+                        </div>
+
+                        <div class="fan-body"
+                            style="background-image: url('{{ url_for('static', filename='images/kh5.jpg') }}');">
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+</div> -->
+<!-- <div class="container-member" id="section4">
+    <img src="https://static.igem.wiki/teams/5136/member-tlp-3/member-fy1.png" alt="">
+    <div class="fenlei">
+        <span style="font-size: 90px; font-family: Comic Sans Ms;">动画推荐</span>
+    </div>
+    <div class="hhh-xie">
+        <div class="grid-pin">
+            <div class="row" style="margin-top:20px">
+                <div class="pro-card-wrapper-pin" style="margin: 20px;">
+                    <div class="pro-card-pin" style="width: 180px;height: 240px;">
+                        <div class="zheng-body"
+                            style="background-image: url('{{ url_for('static', filename='images/dh1.jpg') }}');">
+                        </div>
+
+                        <div class="fan-body"
+                            style="background-image: url('{{ url_for('static', filename='images/dh1.jpg') }}');">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="pro-card-wrapper-pin" style="margin: 20px;">
+                    <div class="pro-card-pin" style="width: 180px;height: 240px;">
+                        <div class="zheng-body"
+                            style="background-image: url('{{ url_for('static', filename='images/dh2.jpg') }}');">
+                        </div>
+
+                        <div class="fan-body"
+                            style="background-image: url('{{ url_for('static', filename='images/dh2.jpg') }}');">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="pro-card-wrapper-pin" style="margin: 20px;">
+                    <div class="pro-card-pin" style="width: 180px;height: 240px;">
+                        <div class="zheng-body"
+                            style="background-image: url('{{ url_for('static', filename='images/dh3.jpg') }}');">
+                        </div>
+
+                        <div class="fan-body"
+                            style="background-image: url('{{ url_for('static', filename='images/dh3.jpg') }}');">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="pro-card-wrapper-pin" style="margin: 20px;">
+                    <div class="pro-card-pin" style="width: 180px;height: 240px;">
+                        <div class="zheng-body"
+                            style="background-image: url('{{ url_for('static', filename='images/dh4.jpg') }}');">
+                        </div>
+
+                        <div class="fan-body"
+                            style="background-image: url('{{ url_for('static', filename='images/dh4.jpg') }}');">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="pro-card-wrapper-pin" style="margin: 20px;">
+                    <div class="pro-card-pin" style="width: 180px;height: 240px;">
+                        <div class="zheng-body"
+                            style="background-image: url('{{ url_for('static', filename='images/dh5.jpg') }}');">
+                        </div>
+
+                        <div class="fan-body"
+                            style="background-image: url('{{ url_for('static', filename='images/dh5.jpg') }}');">
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+</div> -->
+<!-- <div class="container-member" id="section5">
+    <img src="https://static.igem.wiki/teams/5136/member-tlp-3/member-fy1.png" alt="">
+    <div class="fenlei">
+        <span style="font-size: 90px; font-family: Comic Sans Ms;">爱情推荐</span>
+    </div>
+    <div class="hhh-xie">
+        <div class="grid-pin">
+            <div class="row" style="margin-top:20px">
+                <div class="pro-card-wrapper-pin" style="margin: 20px;">
+                    <div class="pro-card-pin" style="width: 180px;height: 240px;">
+                        <div class="zheng-body"
+                            style="background-image: url('{{ url_for('static', filename='images/aq1.jpg') }}');">
+                        </div>
+
+                        <div class="fan-body"
+                            style="background-image: url('{{ url_for('static', filename='images/aq1.jpg') }}');">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="pro-card-wrapper-pin" style="margin: 20px;">
+                    <div class="pro-card-pin" style="width: 180px;height: 240px;">
+                        <div class="zheng-body"
+                            style="background-image: url('{{ url_for('static', filename='images/aq2.jpg') }}');">
+                        </div>
+
+                        <div class="fan-body"
+                            style="background-image: url('{{ url_for('static', filename='images/aq2.jpg') }}');">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="pro-card-wrapper-pin" style="margin: 20px;">
+                    <div class="pro-card-pin" style="width: 180px;height: 240px;">
+                        <div class="zheng-body"
+                            style="background-image: url('{{ url_for('static', filename='images/aq3.jpg') }}');">
+                        </div>
+
+                        <div class="fan-body"
+                            style="background-image: url('{{ url_for('static', filename='images/aq3.jpg') }}');">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="pro-card-wrapper-pin" style="margin: 20px;">
+                    <div class="pro-card-pin" style="width: 180px;height: 240px;">
+                        <div class="zheng-body"
+                            style="background-image: url('{{ url_for('static', filename='images/aq4.jpg') }}');">
+                        </div>
+
+                        <div class="fan-body"
+                            style="background-image: url('{{ url_for('static', filename='images/aq4.jpg') }}');">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="pro-card-wrapper-pin" style="margin: 20px;">
+                    <div class="pro-card-pin" style="width: 180px;height: 240px;">
+                        <div class="zheng-body"
+                            style="background-image: url('{{ url_for('static', filename='images/aq5.jpg') }}');">
+                        </div>
+
+                        <div class="fan-body"
+                            style="background-image: url('{{ url_for('static', filename='images/aq5.jpg') }}');">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+</div> -->
+
+<script src="{{ url_for('static', filename = 'scroll.js') }}"></script>
+<!-- <script src="{{ url_for('static', filename = 'js2024/loading.js') }}"></script> -->

@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+
+
+.lunbo {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    /* background-color: #5053fc; */
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+    overflow: hidden;
+}
+
+.iconfont {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 50%;
+    z-index: 999;
+    font: 900 80px '';
+    color: #53372c;
+    cursor: pointer;
+}
+
+#up-btn {
+    top: 0%;
+}
+
+#down-btn {
+    bottom: 5%;
+}
+
+#content {
+    width: 75%;
+    height: 100%;
+    position: absolute;
+    left: 5%;
+    overflow: hidden;
+    /* gap: 20%; */
+}
+/* 1 */
+
+.photo-wrapper {
+    
+    transform: translateY(-5vh);
+    flex-direction: column;
+    width: 36vh;
+    height: 48vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1500px; /* 开启3D效果 */
+}
+
+.photo-front, .photo-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.8s ease-in-out;
+}
+
+.photo-front {
+    z-index: 2;
+}
+
+.photo-back {
+    transform: rotateY(180deg);
+}
+
+.photo-wrapper:hover .photo-front {
+    transform: rotateY(180deg);
+}
+
+.photo-wrapper:hover .photo-back {
+    transform: rotateY(360deg);
+}
+/* 1 */
+
+
+.photo{
+    width: 36%;
+    height: 100%;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    /* transform: rotate(-90deg); */
+}
+.photo img{
+    width: 90%;
+    height: auto;
+    object-fit: contain;
+    /* border-bottom: 2px solid white;
+    border-top: 2px solid white; */
+}
+.jianjie{
+    /* margin-left: 20%; */
+    /* transform: translateY(-3vh); */
+    width: 54%;
+    margin: 0 auto;
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    color: #53372c;
+}
+.card {
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    transition: transform .8s ease-in-out;
+    gap: 10%;
+    align-items: center;
+}
+
+.card-time {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.card-title {
+    font-size: 1.5vw;
+    font-weight: 500;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #53372c;
+    margin-bottom: 10px;
+    font-family: 'yishu',sans-serif;
+}
+
+.card-passage {
+    font-family: Comic Sans Ms;
+    font-size: 2.4vw;
+    font-weight: 300;
+    text-align: center;
+}
+
+#clock {
+    height: 140%;
+    /* 纵横比为1:1 */
+    aspect-ratio: 1 / 1;
+    position: absolute;
+    right: -50%;
+    top: -20%;
+    border-radius: 50%;
+    /* background-image: linear-gradient(to right, #f0f0f0 0%, #EBD69C 100%); */
+    background-image:url('https://static.igem.wiki/teams/5136/notebook/xiufuban.png');
+    background-size: cover;
+    background-position: center ;
+    /* border: #ff9214 30px solid; */
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #clock {
+        right: -55%;
+    }
+}
+@media (max-aspect-ratio: 8/5) {
+    #clock {
+        right: -60%;
+    }
+}
+@media (max-aspect-ratio: 16/11) {
+    #clock {
+        right: -65%;
+    }
+}
+@media (max-aspect-ratio: 4/3) {
+    #clock {
+        right: -75%;
+    }
+}
+
+#clock-table {
+    width: 96%;
+    height: 96%;
+    border-radius: 50%;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    transition: transform .8s ease-in-out;
+}
+
+.invisible-table {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transform-origin: 50% 50%;
+    position: absolute;
+}
+
+.clock-thick {
+    width: 6%;
+    /* height: 6px; */
+    /* background-color: #6a5e93; */
+    position: absolute;
+    top: calc(50% - 3px);
+    left: 0px;
+}
+.clock-thick img{
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.58);
+    /* height: auto; */
+    /* width: 1000px; */
+    position:absolute;
+    /* top: -98px; */
+    top:-10.7vh;
+    left: 8vw;
+}
+
+.clock-thick span {
+    font-size: 50px;
+    /* position: absolute; */
+    /* left: 140%; */
+    /* top: calc(50% - 30px); */
+    /* color: #5053fc; */
+}
+
+.clock-scale {
+    width: 4%;
+    /* height: 2px; */
+    /* background-color: #6a5e93; */
+    /* position: absolute; */
+    /* top: calc(50% - .5px); */
+    /* left: 0px; */
+}
+
+.back-button {
+    position: fixed;
+    top: 3vh;
+    left: 3vh;
+    width: 10vh;
+    height: 10vh;
+    background-image: url('https://static.igem.wiki/teams/5136/button-lb.png');
+    background-size: cover;
+    background-color: transparent;
+    background-position: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.sub-button {
+    position: fixed;
+    bottom: 3%;
+    left: 48%;
+    width: 20vh;
+    height: 20vh;
+    background-image: url('../static/images/tijiao.png');
+    background-size: cover;
+    background-color: transparent;
+    background-position: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+}
+
+.back-button:hover {
+    opacity: 0.8;
+    /* 悬停时按钮稍微透明 */
+}
