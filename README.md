@@ -36,9 +36,14 @@
 1. 提交评分后，系统会更新个性化推荐列表
 2. 在首页的“个性推荐”区域查看推荐的电影
 
-### 开发者使用手册
+## 开发者使用手册
 
-#### 环境准备
-1. 克隆项目仓库：
-   ```bash
-   git clone https://github.com/your-repo-url/movies-recmond.git
+### 环境准备
+
+#### 克隆项目仓库
+确保你的设备已安装Git，然后使用以下命令克隆项目仓库：
+```bash
+git clone https://github.com/your-repo-url/movies-recmond.git
+
+#### 配置环境
+详细参考文件夹word文档4.2内容
