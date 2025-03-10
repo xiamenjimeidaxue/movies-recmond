@@ -44,6 +44,6 @@
 确保你的设备已安装Git，然后使用以下命令克隆项目仓库：
 ```bash
 git clone https://github.com/your-repo-url/movies-recmond.git
-
+```
 #### 配置环境
 详细参考文件夹word文档4.2内容
